@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RROPS Signup</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body, h1, p, label, input, button, a {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <!-- Logo -->
+                <a class="navbar-brand text-white" href="#">
+                    <img src="rice.jpeg" alt="RROPS Logo" width="40" height="40" class="d-inline-block align-text-top rounded-circle">
+                </a>                
+                <!-- Text/Title -->
+                <a class="navbar-brand text-white ml-3">
+                    <span class="header font-weight-bold">RROPS</span>
+                </a>
+            </div>
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" >
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-5" href="index.html">
+                             Home <!-- Icon size increased -->
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-5 ml-3" href="index.html">
+                             About <!-- Icon size increased -->
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-5" href="index.html #about-contact">
+                             Contact <!-- Icon size increased -->
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-5" href="login.html">
+                            Login <!-- Icon size increased -->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    
+
+    <!-- Signup Section -->
+    <div class="" style="width:90%; margin-left: 6%;">
+        <div class="row align-items-center">
+            <!-- Image Section -->
+            <div class="col-md-5 d-none d-md-block">
+                <div class=" overflow-hidden" style="border-radius: 100% 0px 100% 0px;">
+                    <img src="rice1.jpg" alt="Signup Image" class="img-fluid" >
+                </div>
+            </div>
+
+            <!-- Form Section -->
+            <div class="col-md-6 " style="padding: 100px;">
+                <div class="text-center mb-4">
+                    <img src="rice.jpeg" alt="RROPS Logo" class="rounded-circle mb-3" width="80" height="80" >
+                    <h1 class="text-success">Create an Account</h1>
+                </div>
+                <form action="/signup" method="POST">
+                    <div class="mb-3">
+                        <label for="full-name" class="form-label">Full Name:</label>
+                        <input type="text" id="full-name" name="full_name" class="form-control" required placeholder="Enter your full name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" id="email" name="email" class="form-control" required placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password:</label>
+                        <input type="password" id="password" name="password" class="form-control" required placeholder="Enter your password">
+                    </div>
+                    <div class="mb-3">
+                        <label for="confirm-password" class="form-label">Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirm_password" class="form-control" required placeholder="Confirm your password">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" id="terms" name="terms" class="form-check-input" required>
+                        <label class="form-check-label" for="terms">I agree to the Terms & Conditions</label>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100">Sign Up</button>
+                </form>
+                <p class="text-center mt-3">Already have an account? <a href="login.html" class="text-success">Log In</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

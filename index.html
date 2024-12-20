@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RROPS Landing Page</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body, h1, p, label, input, button, a {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-section {
+            height: 50vh;
+            background: url('rice2.jpg') no-repeat center center/cover;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .feature-icon {
+            font-size: 2.5rem;
+            color: #28a745;
+        }
+        .cta-btn {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .header{
+            margin-top: 10px;
+        }
+        .container{
+            width: 100%; 
+        }
+        #backToTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 10px 15px;
+            font-size: 18px;
+            display: none;
+            cursor: pointer;
+        }
+
+        #backToTopBtn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <!-- Logo -->
+                <a class="navbar-brand text-white" href="#">
+                    <img src="rice.jpeg" alt="RROPS Logo" width="40" height="40" class="d-inline-block align-text-top rounded-circle">
+                </a>                
+                <!-- Text/Title -->
+                <a class="navbar-brand text-white ml-3">
+                    <span class="header font-weight-bold">RROPS</span>
+                </a>
+            </div>
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" >
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-5" href="index.html">
+                            Home 
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-5 ml-3" href="#about-contact">
+                             About 
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-5" href="#about-contact">
+                         Contact
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-5" href="login.html">
+                             Login 
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-5" href="dashboard.html">
+                             Dashbord 
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-5" href="Predictions.html">
+                             Pridection 
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div>
+            <h1 class="display-3 mb-4">Welcome to RROPS</h1>
+            <p class="lead">A platform to connect and support your needs. Simple, efficient, and user-friendly.</p>
+            <a href="signup.html" class="cta-btn mt-4" style="text-decoration: none;">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4">Our Features</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="feature-icon mb-3">
+                        <i class="bi bi-gear"></i>
+                    </div>
+                    <h4>Easy Setup</h4>
+                    <p>Get started quickly with a simple setup that doesn't require complex configurations.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-icon mb-3">
+                        <i class="bi bi-people"></i>
+                    </div>
+                    <h4>Community Driven</h4>
+                    <p>Connect with like-minded individuals and access a wealth of knowledge and support.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-icon mb-3">
+                        <i class="bi bi-shield-lock"></i>
+                    </div>
+                    <h4>Secure</h4>
+                    <p>Your data is safe with us. We prioritize your privacy and ensure a secure experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- About Us and Contact Us Section -->
+    <section id="about-contact" class="py-5">
+        <div class="d-flex flex-column flex-md-row" style="width:75%; margin-left: 7%;">
+            <!-- About Us Section -->
+            <div class="col-md-8 mb-4 mb-md-0" style="padding: 60px; padding-top: 0px;">
+                <h2 class="mb-4">
+                    <i class="bi bi-eye" style="font-size: 2rem; color: #28a745; margin-right: 10px;"></i>Vision
+                </h2>
+                <p>            
+                    To transform Rwanda into a self-sustaining rice producer by optimizing swamp utilization, 
+                    enhancing rice production practices, and fostering a thriving agricultural ecosystem that benefits both farmers and the nation.
+               </p>
+            </div>
+            <!-- Contact Us Section -->
+            <div class="col-md-7 mb-4 mb-md-0" style="padding: 60px; padding-top: 0px;">
+                <h2 class="mb-4">
+                    <i class="bi bi-flag" style="font-size: 2rem; color: #28a745; margin-right: 10px;"></i>Mission
+                </h2>
+                <p>           
+                    Our mission is to provide farmers with an AI-powered platform that optimizes rice cultivation practices, 
+                    boosts yield predictions, and supports sustainable farming methods. Through data-driven insights
+                     and mobile accessibility, RROPS seeks to reduce rice importation, ensure food security, 
+                     and empower local farmers in their agricultural journey.
+               </p>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us and Contact Us Section -->
+    <section id="about-contact" class="py-5">
+        <div class="d-flex flex-column flex-md-row" style="width:75%; margin-left: 7%;">
+            <!-- About Us Section -->
+            <div class="col-md-8 mb-4 mb-md-0" style="padding: 60px; padding-top: 0px;">
+                <h2 class="mb-4">
+                    <i class="bi bi-info-circle" style="font-size: 2rem; color: #28a745; margin-right: 10px;"></i>About Us
+                </h2>
+                <p>
+                The Rwanda Rice Optimization and Prediction System (RROPS) is an innovative initiative dedicated to revolutionizing rice production in Rwanda. 
+                Our mission is to optimize the use of local swamp areas,<br> enhance soil fertility, and leverage cutting-edge AI technology to empower farmers with data-driven insights and practical tools. 
+                RROPS aims to increase rice yields, improve the sustainability of farming practices, and reduce Rwanda's reliance on rice imports.
+               </p>
+               <p>
+
+                By harnessing advanced AI models, geographic information systems (GIS), and real-time weather monitoring, RROPS is creating an intelligent,
+                 farmer-friendly platform that provides tailored recommendations on swamp utilization, crop selection, water management, and yield forecasting. 
+                 Our system is designed to help local farmers make informed decisions, boosting productivity while ensuring environmental sustainability and
+                  supporting Rwanda's long-term rice production goals.
+               </p>
+
+
+            </div>
+            <!-- Contact Us Section -->
+            <div class="col-md-6">
+                <h2 class="mb-4">
+                    <i class="bi bi-chat-dots" style="font-size: 2rem; color: #28a745; margin-right: 10px;"></i> Contact Us
+                </h2>
+                <p>If you have any questions or need assistance, feel free to reach out. We're here to help!</p>
+                <form action="#" method="post">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" placeholder="Your Message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-btn">
+                        <i class="bi bi-send"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-5 bg-success text-white text-center">
+        <div class="container">
+            <h2>Ready to get started?</h2>
+            <p class="lead">Join us today and start experiencing all the benefits RROPS has to offer!</p>
+            <a href="signup.html" class="cta-btn mt-4" style="text-decoration: none;">Sign Up Now</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+<footer class="bg-light text-dark py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Left Section: Copyright and Links -->
+            <div class="col-md-6 mb-4 mb-md-0">
+                <p class="mb-0">&copy; 2024 RROPS. All Rights Reserved.</p>
+                <div class="d-flex mt-3">
+                    <a href="privacy.html" class="text-dark mx-2">Privacy Policy</a>
+                    <a href="terms.html" class="text-dark mx-2">Terms of Service</a>
+                    <a href="contact.html" class="text-dark mx-2">Contact Us</a>
+                </div>
+            </div>
+
+            <!-- Right Section: Social Media Links -->
+            <div class="col-md-6 text-md-end">
+                <div class="d-flex justify-content-center justify-content-md-end mb-4 mb-md-0">
+                    <a href="#" class="text-dark mx-3"><i class="bi bi-facebook" style="font-size: 1.5rem;"></i></a>
+                    <a href="#" class="text-dark mx-3"><i class="bi bi-twitter" style="font-size: 1.5rem;"></i></a>
+                    <a href="#" class="text-dark mx-3"><i class="bi bi-instagram" style="font-size: 1.5rem;"></i></a>
+                    <a href="#" class="text-dark mx-3"><i class="bi bi-linkedin" style="font-size: 1.5rem;"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Newsletter Signup -->
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <h5>Stay Updated!</h5>
+                <p>Sign up for our newsletter to get the latest updates and news from RROPS.</p>
+                <form class="d-flex justify-content-center">
+                    <input type="email" class="form-control w-50" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-success ms-2">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+
+ <!-- Back to Top Button -->
+ <button id="backToTopBtn" onclick="scrollToTop()">
+    <i class="bi bi-arrow-up"></i>
+</button>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JavaScript to show the back-to-top button when scrolling -->
+<script>
+    // Get the button
+    var mybutton = document.getElementById("backToTopBtn");
+
+    // When the user scrolls down 100px from the top of the document, show the button
+    window.onscroll = function() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    };
+
+    // When the user clicks on the button, scroll to the top of the document
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+</script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
